@@ -2,6 +2,52 @@
   text-align: center;
 }
 
+#header {
+  font-family: 'Audiowide', Sans-serif;
+}
+
+#main-logo {
+  max-width: 80px;
+  max-height: 100px;
+}
+
+.nav-link:link, .nav-link:visited, .footer-links:link, .footer-links:visited {
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing: 2px;
+  font-family: 'Audiowide', Serif;
+  font-weight: 200;
+  color: #077A07;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+#headerBackground {
+  background-image: url('images/background-black-ninja.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 0;
+}
+
+#logo {
+  font-family: 'Audiowide', Serif;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: #980909;
+} 
+
+#reg-btn {
+  background-color: #00C700;
+  color: #333;
+  font-family: 'Audiowide', Sans-serif;
+  font-size: 18px;
+}
+
 h1 {
   font-family: 'Audiowide', Serif;
   font-size: 40px;
@@ -40,4 +86,12 @@ h5 {
 p {
   font-family: 'Alike', Sans-serif;
   font-size: 22px;
+}
+
+.carousel-inner {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background: #190D0D;
 }
