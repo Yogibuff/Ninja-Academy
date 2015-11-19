@@ -1,0 +1,114 @@
+* {
+  text-align: center;
+}
+
+#header {
+  font-family: 'Audiowide', Sans-serif;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: red;
+  width: 100%;
+  height: 280px;
+}
+
+#main-logo {
+  max-width: 100px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #040202;
+}
+
+#palette-header {
+  margin: 30px;
+}
+
+/*  ////  red to black scale ////  */
+#lighter-red {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #F80000;
+}
+
+#true-red {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #FA0000;
+}
+
+#main-red {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #980909;
+}
+
+#dark-gray {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #190D0D;
+}
+
+#almost-black {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #040202;
+}
+
+/*  ////  red to black scale ////  */
+#lighter-green {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #00C700;
+}
+
+#true-green {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #00C800;
+}
+
+#main-green {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #077A07;
+}
+
+#darker-green {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #0B140B;
+}
+
+#green-black {
+  width: 190px;
+  height: 110px;
+  font-family: 'Audiowide', Sans-serif;
+  background-color: #020302;
+}
+
+
+#audiowide-sample {
+  font-family: 'Audiowide', Sans-serif;
+}
+
+#alike-sample {
+  font-family: 'Alike', Sans-serif;
+}
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
