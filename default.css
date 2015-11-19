@@ -1,0 +1,43 @@
+* {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Audiowide', Serif;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-family: 'Alike', sans-Serif;
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-family: 'Alike', sans-Serif;
+  font-size: 26px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h4 {
+  font-family: 'Alike', sans-Serif;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h5 {
+  font-family: 'Alike', sans-Serif;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: 'Alike', Sans-serif;
+  font-size: 22px;
+}
