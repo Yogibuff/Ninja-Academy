@@ -35,7 +35,6 @@ a:link, a:visited {
 
 #logo {
   font-family: 'Audiowide', Serif;
-  font-size: 50px;
   font-weight: 100;
   letter-spacing: 5px;
   color: #980909;
@@ -89,9 +88,26 @@ p {
 }
 
 .carousel-inner {
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
   background: #190D0D;
+}
+
+#carousel-of-ninjas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: black;
+}
+
+#carousel-row {
+  width: 100%;
+}
+
+.carousel-center {
+  display: block;
+  margin: 0 auto;
+  background: black;
 }
