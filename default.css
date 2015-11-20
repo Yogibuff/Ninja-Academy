@@ -108,8 +108,8 @@ p {
 
 .carousel-center {
   display: block;
-  margin: 0 auto;
   background: black;
+  max-width: 100%;
 }
 
 .carousel-caption {
