@@ -76,7 +76,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'Alike', sans-Serif;
+  font-family: 'Alike', Sans-serif;
   font-size: 18px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -117,4 +117,13 @@ p {
   text-align: center;
   color: red;
   font-family: 'Alike', Sans-serif;
+}
+
+#lighter-font {
+  font-family: 'Alike', Sans-serif;
+  color: #F80000;
+}
+
+#caption-header {
+  font-family: 'Audiowide', Serif;
 }
