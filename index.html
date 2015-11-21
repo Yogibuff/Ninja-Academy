@@ -11,79 +11,81 @@
   <title>Project One: Responsive Webpage for Ninja Academy for kids ages 10-16 who want to fight and live like ninjas</title>
 </head>
 <body>
+  
   <div id="headerBackground" class="container">
     <div class="row">
-      <div id="logo" class="col-sm-4">
-        <img class="main-logo" src="images/ninja-academy-logo.jpg">
-        <h1>Ninja Academy</h1>
-          <h3>Summer Camp for boys and girls</h3>
+      <div id="logo" class="col-sm-5">
+        <div class="header-logo">
+          <img src="images/ninja-academy-logo.jpg" class="header-logo">
+        </div>
+        <h1 class="header">Ninja Academy</h1>
+        <h3>Summer Camp</h3>
+        <h5>boys and girls 10-16</h5>
+        <br>
+        <br>
       </div> <!-- close #logo -->
-      <div class="col-sm-8" id="navBar">
+      <div class="col-sm-7" id="navBar">
         <ul class="nav navbar-nav">
           <li><a class="nav-link" href="#">Home</a></li>
           <li><a class="nav-link" href="#">Features</a></li>
           <li><a class="nav-link" href="#">Contact</a></li>
+          <li><a class="nav-link" href="#">FAQ</a></li>
           <li><a class="btn btn-default" href="#" role="button" id="reg-btn">Register</a></li> <!-- modal registration form pops up when pressed -->
         </ul>
       </div> <!-- close #navBar -->
     </div> <!-- end .row -->
   </div> <!-- end .container #header-background -->
-  
-  <div class="carousel-center">
-    <div id="carousel-of-ninjas" class="carousel slide" data-ride="carousel">
-      <div class="row" id="carousel-row">
-        <div class="col-sm-8 offset-2">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-of-ninjas" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-of-ninjas" data-slide-to="1"></li>
-            <li data-target="#carousel-of-ninjas" data-slide-to="2"></li>
-            <li data-target="#carousel-of-ninjas" data-slide-to="3"></li>
-          </ol>
-
-          <!-- wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active" id="carousel-home">
-              <img src="images/ninja-sun-background.jpg">
-              <div class="carousel-caption">
-                <h2 id="caption-header">Do something EPIC this Summer!</h2>
-              </div>
+<!-- Carousel begin -->
+  <div id="carousel-of-ninjas" class="carousel slide" data-ride="carousel">
+    <div class="row" id="carousel-row">
+      <div class="col-sm-12">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-of-ninjas" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-of-ninjas" data-slide-to="1"></li>
+          <li data-target="#carousel-of-ninjas" data-slide-to="2"></li>
+          <li data-target="#carousel-of-ninjas" data-slide-to="3"></li>
+        </ol>
+        <!-- wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active" id="carousel-home">
+            <img src="images/ninja-sun-background.jpg">
+            <div class="carousel-caption">
+              <h2 id="caption-header">Do something EPIC this Summer!</h2>
             </div>
-            <div class="item" id="carousel-image2">
-              <img src="images/bruce-lee-flex.jpg" alt="Bruce Lee">
-              <div class="carousel-caption">
-                <h2><em>You could be like...</em></h2>
-                <h1 id="caption-header">Bruce Lee</h1>
-                <h2 id="lighter-font">What kind of Ninja do YOU want to be?</h2>
-              </div>
+          </div>
+          <div class="item" id="carousel-image2">
+            <img src="images/bruce-lee-flex.jpg" alt="Bruce Lee">
+            <div class="carousel-caption">
+              <h2><em>You could be like...</em></h2>
+              <h1 id="caption-header">Bruce Lee</h1>
+              <h4 id="lighter-font">in 30-days!</em></h2>
             </div>
-            <div class="item" id="carousel-image3">
-              <img src="images/goku-ninja.jpg" alt="Goku Son">
-              <div class="carousel-caption">
-                <h1 id="caption-header">Goku</h1>
-                <h3 id="lighter-font">Protector of Earth</h3>
-                <h2 id="lighter-font">You can save the world!</h2>
-              </div>
+          </div>
+          <div class="item" id="carousel-image3">
+            <img src="images/goku.jpg" alt="Goku Son">
+            <div class="carousel-caption">
+              <h2 id="lighter-font">You can save the world!</h2>
+              <h1 id="caption-header">Just like Goku</h1>
             </div>
-            <div class="item" id="carousel-image4">
-              <img src="images/naruto-ninja.jpg" alt="Naruto Uzumaki">
-              <div class="carousel-caption">
-                <h1 id="caption-header">Naruto Uzumaki</h1>
-                <h4 id="lighter-font">This ninja never gives up</h4>
-                <h3 id="lighter-font">Are you ready to protect your friends?</h3>
-              </div>
+          </div>
+          <div class="item" id="carousel-image4">
+            <img src="images/naruto-black-trimmed.png" alt="Naruto Uzumaki">
+            <div class="carousel-caption">
+              <h1 id="caption-header">Naruto Uzumaki</h1>
+              <h4 id="lighter-font">This ninja never gives up</h4>
+              <h3 id="lighter-font">Are you ready to protect your friends?</h3>
             </div>
-          </div> <!-- close .carousel-inner -->
-        
-          <!-- carousel controls -->
-          <a class="left carousel-control" href="#carousel-of-ninjas" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#carousel-of-ninjas" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
-      </div> <!-- close .row -->
-    </div> <!-- close .carousel slide #carousel-of-ninjas -->
-  </div> <!-- close .carousel-center -->
+          </div>
+        </div> <!-- close .carousel-inner -->
+        <!-- carousel controls -->
+        <a class="left carousel-control" href="#carousel-of-ninjas" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-of-ninjas" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div> <!-- close .row -->
+  </div> <!-- close .carousel slide #carousel-of-ninjas -->
 </body>
 </html>
