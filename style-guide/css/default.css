@@ -57,7 +57,7 @@ a:link, a:visited {
   width: 190px;
   height: 110px;
   font-family: 'Audiowide', Sans-serif;
-  background-color: #040202;
+  background-color: #040202; /* alternate: #190D0D */;
 }
 
 /*  ////  red to black scale ////  */

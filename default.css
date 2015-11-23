@@ -2,11 +2,76 @@
   text-align: center;
 }
 
-#header {
-  font-family: 'Audiowide', Serif;
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  min-width: 600px;
 }
 
-#logo {
+/* to do: add min-width so the site cannot be smashed narrower than 600px!;
+
+/* Navbar styling */
+.navbar-wrapper /* used for positioning */ {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  font-family: 'Audiowide', Serif;
+  font-weight: 150;
+  font-size: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  min-width: 600px;
+  max-height: 60px;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding-top: 25px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  min-width: 100%;
+}
+
+.navbar-brand {
+  font-family: 'Audiowide', Serif;
+  font-weight: 150;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#mini-logo {
+  max-height: auto;
+  max-width: 60px;
+}
+
+#home-nav {
+  background-color: black;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.navbar-wrapper > .navbar {
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: justify;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-brand {
   display: inline-block;
   margin: 0;
   font-family: 'Audiowide', Serif;
@@ -15,6 +80,13 @@
   color: #980909;
   text-align: center;
 } 
+
+/*
+.nav {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+*/
 
 #reg-btn {
   background-color: #00C700;
@@ -30,12 +102,13 @@
   width: 180px;
   height: 175px;
   display: block;
-  z-index: -2;
+  z-index: 1;
   text-align: right;
 }
 
 .nav-link:link, .nav-link:visited, .footer-links:link, .footer-links:visited {
-  margin-left: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   letter-spacing: 2px;
   font-family: 'Audiowide', Serif;
   font-weight: 300;
@@ -47,18 +120,70 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-/* white background is better, but this img does look ok and can be used for something else
-#headerBackground {
-  background-image: url('images/background-black-ninja-wide.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  max-height: 600px;
-  margin-bottom: 0;
-}
-*/
 
-/*  End Header  */
+/* Carousel styling */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+.carousel-indicators /* working on moving these to the right, instead of center */ {
+  position: absolute;
+  display: inline-block;
+  bottom: -10px;
+  right: 60px;
+  z-index: 4;
+}
+
+.carousel-caption {
+  overflow: scroll;
+  background-color: rgba(250, 244, 239, 0.5);
+  z-index: 3;
+  max-height: 200px;
+  color: #F5F5F5;
+  text-shadow: 3px 2px #190D0D, 1px 0px 1px #190D0D, 0px 1px 1px #190D0D, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,;
+  font-weight: 130;
+}
+
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+#header {
+  font-family: 'Audiowide', Serif;
+}
+
+#will-teach-header {
+  font-size: 50px;
+  text-shadow: 3px 2px #190D0D, 1px 0px 1px #190D0D, 0px 1px 1px #190D0D, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee;
+}
+
+.footer-padding {
+  padding-bottom: 120px;
+}
+
+#footer-top-link {
+  padding-right: 100px;
+}
+
+#footer-left {
+  padding-left: 60px;
+}
+
+/*  end Carousel CSS  */
 
 h1 {
   font-family: 'Audiowide', Serif;
@@ -100,53 +225,6 @@ p {
   font-size: 22px;
 }
 
-/* Carousel styling */
-
-#carousel-row {
-  display: block;
-  background: black;
-  max-width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.carousel-inner {
-  display: block;
-  max-width: 100%;
-  background: black;
-}
-
-#carousel-of-ninjas {
-  margin-left: 100px;
-  margin-right: 100px;
-  max-height: 900px;
-}
-
-.carousel-caption {
-  display:inline-block;
-  text-align: center;
-  max-width: 600px;
-  background-color: rgba(250, 244, 239, 0.5);
-  font-family: 'Alike', Sans-serif;
-  color: red;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-left: auto;
-  padding: 0;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 2%;
-  background-color: white;
-  color: white;
-  padding-left: 20px;
-}
-
 #lighter-font {
   font-family: 'Alike', Sans-serif;
   color: #F80000;
@@ -155,3 +233,23 @@ p {
 #caption-header {
   font-family: 'Audiowide', Serif;
 }
+
+.teach {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+/* about.html page */
+.companies {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.featurette-divider {
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+/* end about.html CSS */
