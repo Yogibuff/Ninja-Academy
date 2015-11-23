@@ -18,7 +18,6 @@ body {
   left: 0;
   z-index: 5;
   font-family: 'Audiowide', Serif;
-  font-weight: 150;
   font-size: 25px;
   margin-right: 20px;
   margin-left: 20px;
@@ -38,7 +37,6 @@ body {
 
 .navbar-brand {
   font-family: 'Audiowide', Serif;
-  font-weight: 150;
   font-size: 45px;
   letter-spacing: 5px;
   margin-right: auto;
@@ -125,6 +123,7 @@ a:link, a:visited {
 .carousel {
   height: 500px;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .carousel-indicators /* working on moving these to the right, instead of center */ {
@@ -136,16 +135,16 @@ a:link, a:visited {
 }
 
 .carousel-caption {
-  overflow: scroll;
-  background-color: rgba(250, 244, 239, 0.5);
+  overflow: auto; /* overflows goes into verticle scrollbar only if needed since hidden in parent */
+  background-color: rgba(250, 244, 239, 0.4);
   z-index: 3;
   max-height: 200px;
+  padding: 0;
   color: #F5F5F5;
   text-shadow: 3px 2px #190D0D, 1px 0px 1px #190D0D, 0px 1px 1px #190D0D, 
     2px 1px 1px #ccc, 1px 2px 1px #eee,
     3px 2px 1px #ccc, 2px 3px 1px #eee,
     4px 3px 1px #ccc, 3px 4px 1px #eee,;
-  font-weight: 130;
 }
 
 .carousel .item {
@@ -240,12 +239,7 @@ p {
   text-decoration: underline;
 }
 
-/* about.html page */
-.companies {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
+/* about.html styling */
 .featurette-divider {
   padding-top: 30px;
   padding-right: 10px;
