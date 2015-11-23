@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <link href="new-carousel.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Alike|Audiowide' rel='stylesheet' type='text/css'>
+  <title>Project One: Ninja Academy - 'about' page</title>
+</head>
+<body>
+  <div class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <a href="#" class="pull-left"><img id="mini-logo" src="images/ninja-academy-logo-mini.png"></a>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Ninja Academy</a>
+          </div>  <!-- close .navbar-header -->
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active" id="home-nav"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn More<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Camp Features</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="about.html">Sponsors</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Questions?</li>
+                  <li><a href="#">Top Questions: Answered</a></li>
+                  <li><a class="btn btn-default" href="#" role="button" id="question-btn">Send us your Question</a></li> <!-- modal question/comment form pops up when pressed -->
+                </ul> <!-- close .dropdown-menu -->
+              </li> <!-- close .dropdown -->
+              <li><a class="btn btn-default" href="#" role="button" id="reg-btn">Register</a></li> <!-- modal registration form pops up when pressed -->
+            </ul> <!--close .nav navbar-nav -->
+          </div> <!-- close .navbar-collapse #navbar -->
+        </div> <!-- close .container -->
+      </nav> <!-- close .navbar navbar-fixed-top -->
+    </div> <!-- close .container -->
+  </div> <!-- close .navbar-wrapper -->
+    
+  <!--  Sponsors and their logos go here  -->
+  <div class="container" id="center-page">
+    <div class="container sponsors" id="about-top">
+      <div class="row companies">
+        <div class="col-sm-3">
+          <h2>Korean Air</h2>
+          <img src="#" href="#" alt"logo goes here">
+        </div>
+        <div class="col-sm-3">
+          <h2>Blizzard</h2>
+          <img src="#" href="#" alt"logo goes here">
+        </div>
+        <div class="col-sm-3">
+          <h2>Tokyo.tv</h2>
+          <img src="#" href="#" alt"logo goes here">
+        </div>
+        <div class="col-sm-3">
+          <h2>AllninjaGear.com/</h2>
+          <img src="#" href="#" alt"logo goes here">
+        </div>
+      </div><!-- close .row -->
+    </div> <!-- close .container sponsors -->
+  
+  <!-- Begin Featurettes -->
+    <div class="container featurettes">
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h1 class="featurette-heading">Unlock Your Inner Strength!</h1>
+          <h2><span class="text-muted">You may surpise yourself</span></h2>
+          <p class="lead">Some Text goes here if I feel like making this a full on description. The picture should be cool enough, but I could write some super cool stuff about unlocking your potential at ninja academy.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/open.jpg">
+        </div>
+      </div> <!-- end .row -->
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/instructors.png">
+        </div>
+        <div class="col-md-7">
+          <h1 class="featurette-heading">Oh yeah, our instructors are <b>Badasses</b>.</h1>
+          <h2><span class="text-muted">See for yourself!</span></h2>
+          <p class="lead">Ninja Academy hires the best of the best. Our instructors have been trained by Grandmasters of martial arts and other Ninja skills, including a vast array of weapons.</p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h1 class="featurette-heading">Special Night Missions!</h1>
+          <h2><span class="text-muted">While learning stealth techniques</span></h2>
+          <p class="lead">Trainging will normally be during the daytime, but once a week ninjas will take part in special night missions that test the senses, intelligence, and stealthy skill of each student.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/moon-ninja.jpg">
+        </div>
+      </div> <!-- end .row -->
+      <hr class="featurette-divider">
+    </div> <!-- end .container featurettes -->
+  <!-- End Featurettes -->
+      
+  <!-- Footer -->
+      <footer>
+        <p class="pull-right" id="footer-top-link"><a href="#about-top">Back to Top</a></p>
+        <p class="pull-left" id="footer-left">&copy; 2014 NinjaAcademy, LLC. &middot; <a href="privacypolicy.html">Privacy</a> &middot; <a href="terms.html">Terms of Use</a></p>
+      </footer>
+      <footer>
+    </div> <!--  end .container #center-page  -->
+  </body>
+</html>
