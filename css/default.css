@@ -28,9 +28,9 @@ body {
 .nav > li > a {
   position: relative;
   display: block;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-right: 40px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   padding-left: 20px;
   min-width: 100%;
 }
@@ -262,11 +262,11 @@ p {
 
 /* more modal-specific styles */
 #comments {
-  width: 90%; /* desired relative width */
+  width: 90%;
   left: 5%; /* (100%-width)/2 */
   /* place center */
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #register-modal-button {
@@ -275,11 +275,11 @@ p {
 }
 
 textarea#message {
-  width: 90%; /* desired relative width */
+  width: 90%;
   left: 5%; /* (100%-width)/2 */
   /* place center */
-  margin-left:auto;
-  margin-right:auto; 
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 input#required.text-center {
@@ -292,7 +292,6 @@ form {
 }
 
 label, input {
-    /* in order to define widths */
     display: inline-block;
 }
 
