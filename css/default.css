@@ -30,7 +30,7 @@ body {
   display: block;
   padding-top: 25px;
   padding-right: 40px;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
   padding-left: 20px;
   min-width: 100%;
 }
@@ -80,13 +80,6 @@ body {
   text-align: center;
 } 
 
-/*
-.nav {
-  padding-top: 10px;
-  padding-left: 15px;
-}
-*/
-
 #reg-btn {
   background-color: #00C700;
   color: #333;
@@ -131,7 +124,6 @@ a:link, a:visited {
   position: absolute;
   display: inline-block;
   bottom: -10px;
-  right: 60px;
   z-index: 4;
 }
 
@@ -258,11 +250,8 @@ p {
 /* 404 error page css */
 #error-page {
   background-color: #daecee;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -303px;
-  margin-left: -303px;
+  width: 100%;
+  height: auto;
 }
 
 /* end error page */
@@ -278,6 +267,11 @@ p {
   /* place center */
   margin-left:auto;
   margin-right:auto;
+}
+
+#register-modal-button {
+  padding-bottom: 12px;
+  padding-top: 20px;
 }
 
 textarea#message {
@@ -316,4 +310,4 @@ label + input {
 input + input {
     float: right;
 }
-/* END Register modal */
+/* END modal styles */
