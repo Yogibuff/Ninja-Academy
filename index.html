@@ -39,7 +39,8 @@
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Questions?</li>
                   <li><a href="missing-page.html">Top Questions: Answered</a></li>
-                  <li><a class="btn btn-default" href="#" role="button" id="question-btn">Send us your Question</a></li> <!-- modal question/comment form pops up when pressed -->
+  <!-- modal QUESTION form pops up when pressed -->
+                  <li><button type="button" class="btn btn-danger btn-md" id="question-modal-button" data-toggle="modal" data-target="#question-Modal">Send us your Question</button></li>
                 </ul> <!-- close .dropdown-menu -->
               </li> <!-- close .dropdown -->
   <!-- modal registration form pops up when pressed -->
@@ -136,7 +137,7 @@
   </footer>
 
 
-<!-- BEGIN Register Modal -->
+<!-- BEGIN Subscribe Modal -->
   <div class="modal fade" id="subscribe-Modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -204,6 +205,65 @@
   </div> <!-- close .modal #subscribe-modal -->
 <!-- END Subscribe Modal -->
 
+<!-- BEGIN Question Modal -->
+  <div class="modal fade" id="question-Modal" tabindex="-10" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <br>
+          <h4 class="modal-title">Ask the Ninja Academy Grandmaster!</h4>
+        </div> <!-- close .modal-header -->
+        <div class="modal-body">
+          <div class="text-center" id="please-complete">The Grandmaster is ancient, please be brief with your question and click Submit
+          <br>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <form action="index.html" method="post">
+                <legend><b>Ask Your Question:</b></legend>
+                <br>
+                <ol class="form-alignment-table">
+                  <li>
+                  <div class="form group">
+                    <div class="form-input-field">
+                      <label class="text-center">Name:</label>
+                      <input id="required" type="text" name="first-name" maxlength="30" placeholder="required field" class="text-center">
+                    </div>
+                  </div> <!-- closes .form group of First Name -->
+                  </li>
+                  <br>
+                  <li>
+                  <div class="form group">
+                    <div class="form-input-field">
+                      <label class="text-center">Email:</label>
+                      <input id="required" type="email" name="email" maxlength="30" placeholder="required field" class="text-center">
+                    </div>
+                  </div>
+                  </li>
+                  <br>
+                  <li>
+                  <div class="form group">
+                    <div class="form-input-field">
+                      <label class="text-center" id="comments">Comments:</label>
+                        <textarea id="message" rows="3" cols="10" placeholder="Remember: the Ninja Academy Grandmaster who will be reading this and emailing you back an answer is VERY ANCIENT and will NOT read any books you send him. Enter your brief question here..." name="message" style="margin: 0px; height: 159px; width: 375px;"></textarea>
+                    </div>
+                  </div>
+                  </li>
+                </ol>
+                <div class="modal-footer">
+                  <div class="submit-button" id="text-center">
+                    <input type="button" class="btn btn-success" name="submit" value="Submit">
+                    <button type="button" class="btn btn-warning" id="text-center" data-dismiss="modal">Close</button>
+                  </div> <!-- closes .submit-button -->               
+                </div> <!-- close .modal footer -->
+              </form>
+            </div> <!-- close .col-sm-12 -->
+          </div> <!-- close .row -->
+        </div> <!-- closes .modal body -->
+      </div> <!-- close .modal content -->
+    </div> <!-- closes .modal dialogue -->
+  </div> <!-- close .modal #register-modal -->
+<!-- END Question Modal -->
 
 <!-- BEGIN Register Modal -->
   <div class="modal fade" id="register-Modal" tabindex="-10" role="dialog">
@@ -281,6 +341,6 @@
       </div> <!-- close .modal content -->
     </div> <!-- closes .modal dialogue -->
   </div> <!-- close .modal #register-modal -->
-<!-- END Subscribe Modal -->
+<!-- END Register Modal -->
 </body>
 </html>
