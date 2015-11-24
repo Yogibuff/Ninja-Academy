@@ -1,0 +1,319 @@
+* {
+  text-align: center;
+}
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  min-width: 600px;
+}
+
+/* to do: add min-width so the site cannot be smashed narrower than 600px!;
+
+/* Navbar styling */
+.navbar-wrapper /* used for positioning */ {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  font-family: 'Audiowide', Serif;
+  font-size: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  min-width: 600px;
+  max-height: 60px;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding-top: 25px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  min-width: 100%;
+}
+
+.navbar-brand {
+  height: 60px;
+  font-family: 'Audiowide', Serif;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#mini-logo {
+  max-height: auto;
+  max-width: 60px;
+}
+
+#home-nav {
+  background-color: black;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.navbar-wrapper > .navbar {
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: justify;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-brand {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Audiowide', Serif;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: #980909;
+  text-align: center;
+} 
+
+/*
+.nav {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+*/
+
+#reg-btn {
+  background-color: #00C700;
+  color: #333;
+  font-family: 'Audiowide', Sans-serif;
+  font-size: 18px;
+}
+
+.header-logo {
+  position: static;
+  float: left;
+  padding-top: 10px;
+  width: 180px;
+  height: 175px;
+  display: block;
+  z-index: 1;
+  text-align: right;
+}
+
+.nav-link:link, .nav-link:visited, .footer-links:link, .footer-links:visited {
+  margin-left: 15px;
+  margin-right: 15px;
+  letter-spacing: 2px;
+  font-family: 'Audiowide', Serif;
+  font-weight: 300;
+  color: #077A07;
+  float: right;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+
+/* Carousel styling */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.carousel-indicators /* working on moving these to the right, instead of center */ {
+  position: absolute;
+  display: inline-block;
+  bottom: -10px;
+  right: 60px;
+  z-index: 4;
+}
+
+.carousel-caption {
+  overflow: auto; /* overflows goes into verticle scrollbar only if needed since hidden in parent */
+  background-color: rgba(250, 244, 239, 0.4);
+  z-index: 3;
+  max-height: 200px;
+  padding: 0;
+  color: #F5F5F5;
+  text-shadow: 3px 2px #190D0D, 1px 0px 1px #190D0D, 0px 1px 1px #190D0D, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,;
+}
+
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+#header {
+  font-family: 'Audiowide', Serif;
+}
+
+#will-teach-header {
+  font-size: 50px;
+  text-shadow: 3px 2px #190D0D, 1px 0px 1px #190D0D, 0px 1px 1px #190D0D, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee;
+}
+
+.footer-padding {
+  padding-bottom: 120px;
+}
+
+#footer-top-link {
+  padding-right: 100px;
+}
+
+#footer-left {
+  padding-left: 60px;
+}
+
+/*  end Carousel CSS  */
+
+h1 {
+  font-family: 'Audiowide', Serif;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-family: 'Alike', sans-Serif;
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-family: 'Alike', sans-Serif;
+  font-size: 26px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h4 {
+  font-family: 'Alike', sans-Serif;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h5 {
+  font-family: 'Alike', Sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: 'Alike', Sans-serif;
+  font-size: 22px;
+}
+
+#lighter-font {
+  font-family: 'Alike', Sans-serif;
+  color: #F80000;
+}
+
+#caption-header {
+  font-family: 'Audiowide', Serif;
+}
+
+.teach {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+/* about.html styling */
+.featurette-divider {
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+.companies {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+/* end about.html CSS */
+
+
+/* 404 error page css */
+#error-page {
+  background-color: #daecee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -303px;
+  margin-left: -303px;
+}
+
+/* end error page */
+
+.form-alignment-table > li {
+  list-style: none;
+}
+
+/* more modal-specific styles */
+#comments {
+  width: 90%; /* desired relative width */
+  left: 5%; /* (100%-width)/2 */
+  /* place center */
+  margin-left:auto;
+  margin-right:auto;
+}
+
+textarea#message {
+  width: 90%; /* desired relative width */
+  left: 5%; /* (100%-width)/2 */
+  /* place center */
+  margin-left:auto;
+  margin-right:auto; 
+}
+
+input#required.text-center {
+  font-size: 22px;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+}
+
+label + input {
+    width: 60%;
+    margin: 0 5% 0 3%;
+}
+
+input + input {
+    float: right;
+}
+/* END Register modal */
