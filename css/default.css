@@ -297,11 +297,13 @@ p {
 
 /* FAQ.html page CSS */
 
-.faq-head {
+.faq-container {
   padding-top: 120px;
   padding-bottom: 50px;
   margin-left: -15px;
 }
+
+/* end FAQ CSS */
 
 .form-alignment-table > li {
   list-style: none  !important;
