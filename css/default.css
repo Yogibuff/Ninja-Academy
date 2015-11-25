@@ -295,6 +295,14 @@ p {
 
 /* end error page */
 
+/* FAQ.html page CSS */
+
+.faq-head {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin-left: -15px;
+}
+
 .form-alignment-table > li {
   list-style: none  !important;
 }
