@@ -8,9 +8,41 @@ body {
   min-width: 600px;
 }
 
-/* to do: add min-width so the site cannot be smashed narrower than 600px!;
-
 /* Navbar styling */
+
+/* Navbar media Queries */
+/* Issue solved: added media queries so the carousel and navbar cannot be smashed
+  into an unreadable block of text at small or narrow screen sizes */
+
+@media only screen and (max-width: 766px) and (min-width: 380px) {
+    .carousel, .carousel-caption{ display:none; }
+    a.navbar-brand{ font-size: 22px; }
+    .nav > li > a{ font-size: 14px; }
+    h1#will-teach-header{ padding-top: 80px; }
+}
+
+@media only screen and (max-width: 872px) and (min-width: 767px) {
+    a.navbar-brand{ font-size: 24px; }
+    .nav > li > a{ padding-right: 5px !important; padding-left: 2px !important; font-size: 18px; }
+}
+
+@media only screen and (max-width: 924px) and (min-width: 873px) {
+    a.navbar-brand{ font-size: 26px; }
+    .nav > li > a{ font-size: 14px; }
+}
+
+@media only screen and (max-width: 1070px) and (min-width: 925px) {
+    a.navbar-brand{ font-size: 26px; }
+    .nav > li > a{ font-size: 18px; }
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 1070px) {
+    a.navbar-brand{ font-size: 30px; }
+}
+
+/* end Navbar resizing media queries */
+
+
 .navbar-wrapper /* used for positioning */ {
   position: absolute;
   top: 0;
@@ -52,6 +84,12 @@ body {
 #mini-logo {
   max-height: auto;
   max-width: 60px;
+}
+
+.navbar-header {
+  /* min-width: 458px  !important;  not functional, issue with 2 line navbar before it collapses */
+  max-height: 60px  !important;
+  overflow: hidden;
 }
 
 #home-nav {
@@ -142,6 +180,7 @@ a:link, a:visited {
 
 .carousel .item {
   height: 500px;
+  min-width: 1263px;
   background-color: #777;
 }
 
@@ -257,7 +296,7 @@ p {
 /* end error page */
 
 .form-alignment-table > li {
-  list-style: none;
+  list-style: none  !important;
 }
 
 /* more modal-specific styles */
@@ -292,21 +331,21 @@ form {
 }
 
 label, input {
-    display: inline-block;
+  display: inline-block;
 }
 
 label {
-    width: 30%;
-    /* positions the label text beside the input */
-    text-align: right;
+  width: 30%;
+  /* positions the label text beside the input */
+  text-align: right;
 }
 
 label + input {
-    width: 60%;
-    margin: 0 5% 0 3%;
+  width: 60%;
+  margin: 0 5% 0 3%;
 }
 
 input + input {
-    float: right;
+  float: right;
 }
 /* END modal styles */
