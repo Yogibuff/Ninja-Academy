@@ -1,8 +1,26 @@
-// 404 page redirect - all routes that do not match produce my template instead
+//event listener Javascript for accordian expand when mouseover
+
+
+//event listener to open accordian topic:2 id "collapse2" located on faq.html page when clicking the Teamwork "View details" link on home page
+
+var accordian = document.getElementsByClassName('panel-heading');
+
+panel-heading.addEventListener("click", /* [change to opened accordian via changing all divs with the id "collapse2" to class="panel-collapse collapse in"])
+
+//repeat for div id "collapse3" when clicking the Weapons Training "View details" link on home page
+
+//repeat for div id "collapse4" when clicking the Martial Arts "View details" link on home page (5 and 1 are already set to be open)
+
+
+
+
+
+
+// 404 page redirect - all routes that do not match produce my 404 template 'missing-page.html' instead
 
 app.error(function(err, req, res, next){
     if (err instanceof NotFound) {
-        res.sendFile('ninja/404-page.html');
+        res.sendFile('ninja/missing-page.html');
     } else {
         next(err);
     }
