@@ -24,7 +24,7 @@ server = http.createServer(function(req,res){
 
     switch(myPath){
 
-      case '/public':
+      case '/ninja':
 
         // get the extensions of the files inside this dir (.html, .js, .css)
         var extname = mypath.extname(path);
@@ -33,7 +33,7 @@ server = http.createServer(function(req,res){
 
             // get the html
             case '.html':
-              fs.readFile(__dirname + '/public/chatclient.html', function (err, data) {
+              fs.readFile(__dirname + '/ninja/index.html', function (err, data) {
                 if (err) return send404(res);
                 res.writeHead(200, {'Content-Type': 'text/html'});
                 res.write(data, 'utf8');
@@ -41,9 +41,9 @@ server = http.createServer(function(req,res){
               });
             break;
 
-            // get the script that /public/chatclient.html references
+            // get the script that /ninja/chatclient.html references
             case '.js':
-              fs.readFile(__dirname + '/public/js/script.js', function (err, data) {
+              fs.readFile(__dirname + '/ninja/js/script.js', function (err, data) {
                 if (err) return send404(res);
                 res.writeHead(200, { 'Content-Type': 'text/javascript' });
                 res.end(content, 'utf-8');
@@ -51,11 +51,11 @@ server = http.createServer(function(req,res){
               });
             break;
 
-            // get the styles that /public/chatclient.html references
+            // get the styles that /ninja/chatclient.html references
             case '.css':
-              fs.readFile(__dirname + '/public/css/style.css', function (err, data) {
+              fs.readFile(__dirname + '/ninja/css/default.css', function (err, data) {
                 if (err) return send404(res);  
-                res.sendFile('ninja/404-page.html', { 'Content-Type': 'text/javascript' }); //inserted 404-page.html instead of standard 404
+                res.sendFile('ninja/missing-page.html', { 'Content-Type': 'text/javascript' }); //inserted custom 404-page instead of standard 404
                 res.end(content, 'utf-8');
                 res.end();
               });
