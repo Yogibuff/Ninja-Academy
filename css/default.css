@@ -120,11 +120,10 @@ body {
   text-align: center;
 } 
 
-#reg-btn {
-  background-color: #00C700;
-  color: #333;
-  font-family: 'Audiowide', Sans-serif;
-  font-size: 18px;
+#register-modal-button {
+  padding-top: 16px;
+  padding-bottom: 14px;
+  font-size: 22px
 }
 
 .header-logo {
@@ -341,11 +340,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 95%;
-}
-
-#register-modal-button {
-  padding-bottom: 12px;
-  padding-top: 20px;
 }
 
 textarea#message {
