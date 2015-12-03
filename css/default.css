@@ -14,14 +14,16 @@ body {
 
 @media only screen and (max-width: 766px) and (min-width: 370px) {
     .carousel, .carousel-caption{ display:none; }
+    #will-teach-header{ padding-top: 80px; }
     a.navbar-brand{ font-size: 22px; }
     .nav > li > a{ font-size: 14px; }
-    h1#will-teach-header{ padding-top: 80px; }
     .faq-container { font-size: 10px; }
     #faq-header { font-size: 30px  !important; }
 }
 
 @media only screen and (max-width: 887px) and (min-width: 767px) {
+    .carousel, .carousel-caption{ display:none; }
+    #will-teach-header{ padding-top: 80px; }
     a.navbar-brand{ font-size: 24px; }
     .nav > li > a{ padding-right: 5px !important; padding-left: 2px !important; font-size: 18px; }
 }
@@ -225,22 +227,18 @@ p {
   list-style: none  !important;
 }
 
+
 /* more modal-specific styles */
-#comments {
+
+textarea#message {
   width: 90%;
+  max-width: 95%;
   left: 5%; /* (100%-width)/2 */
   /* place center */
   margin-left: auto;
   margin-right: auto;
-  max-width: 95%;
-}
-
-textarea#message {
-  width: 90%;
-  left: 5%; /* (100%-width)/2 */
-  /* place center */
-  margin-left: auto;
-  margin-right: auto; 
+  padding: 10px;
+  text-align: left; 
 }
 
 input#required.text-center {
@@ -270,6 +268,10 @@ label + input {
 input + input {
   float: right;
 }
+
+.remove-alignment {
+  text-align: center !important;
+}
 /* END modal styles */
 
 
@@ -281,6 +283,7 @@ input + input {
   right: 0;
   left: 0;
   z-index: 5;
+  width: 100%;
   font-family: 'Audiowide', Serif;
   font-size: 25px;
   margin-right: 20px;
@@ -293,10 +296,10 @@ input + input {
   position: relative;
   display: block;
   padding-top: 20px;
-  padding-right: 40px;
+  padding-right: 30px;
   padding-bottom: 20px;
-  padding-left: 20px;
-  min-width: 100%;
+  padding-left: 30px;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -305,12 +308,7 @@ input + input {
   font-size: 45px;
   letter-spacing: 5px;
   margin-right: auto;
-  margin-left: auto;
-}
-
-.navbar-wrapper > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  margin-left: 0;
 }
 
 #mini-logo {
@@ -326,11 +324,12 @@ input + input {
 #home-nav {
   background-color: black;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .navbar-wrapper > .navbar {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
   text-align: justify;
 }
 
@@ -349,19 +348,20 @@ input + input {
 } 
 
 #register-modal-button {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  margin-top: 5px;
+  padding-top: 9px;
+  padding-bottom: 8px;
   font-size: 22px;
   border-color: #e3e3e3;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-style: solid;
-  border-bottom-width: 3px;
-  border-left-width: 3px;
-  border-right-width: 3px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 2px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  border-top-width: 3px; 
+  border-top-width: 2px; 
 }
 
 #subscribe-modal-button {
