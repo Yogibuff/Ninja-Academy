@@ -323,9 +323,9 @@ input + input {
   position: relative;
   display: block;
   padding-top: 20px;
-  padding-right: 30px;
+  padding-right: 25px;
   padding-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 25px;
   width: 100%;
 }
 
@@ -533,24 +533,7 @@ ul.dropdown-menu {
   background-color: transparent !important;
 }
 
-  50% {
-    transform: scale(0.85);
-  }
 
-  100% {
-    transform: scale(0.95);
-  }
-}
-
-@keyframes hvr-push {
-  50% {
-    transform: scale(0.85);
-  }
-
-  100% {
-    transform: scale(0.95);
-  }
-}
 
 .hvr-push {
   display: inline-block;
@@ -563,6 +546,31 @@ ul.dropdown-menu {
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+
+  100% {
+    -webkit-transform: scale(95);
+    transform: scale(0.95);
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+
 
 .hvr-bounce-to-top {
   display: inline-block;
@@ -630,5 +638,6 @@ ul.dropdown-menu {
   transform: scaleX(1);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
+
 
 /* END Navbar Styling */
