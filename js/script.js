@@ -1,12 +1,44 @@
-//event listener Javascript for accordian expand when mouseover
+/* 
+On click, Testimonial Button (class .testimonials) changes visibility of div .testimonialHide to visible 
+Also, on click About Button (class .aboutNav) changes visibility of div .testimonialHide back to hidden
+*/
+
+/* not yet functional
+var testimonials = document.getElementById('testimonials'); 
+var aboutNav = document.getElementById('aboutNav');
+aboutNav.alterVisibility = function changevisibility() {
+  if(this.style.visibility == "visible") {
+    this.style.visibility="hidden";
+  }
+  else {
+    this.style.visibility="visible";
+  }
+}
+testimonials.addEventListener('click',function() {aboutNav.alterVisibility();},false);
+
+
+
+var index = document.getElementsByClassName('testimonialHide');
+
+testimonialHide.addEventListener("click", )
+*/
+
+/* to do: add testimonial html, content, 3 testimonial images, CSS styling fonts and section sizing,
+classes 'testimonials', 'aboutNav', and 'testimonialHide'
+
+
+
+
+
+// in progress: event listener for accordian expand when clicking corresponding Learn More btn on index.html
 
 
 //event listener to open accordian topic:2 id "collapse2" located on faq.html page when clicking the Teamwork "View details" link on home page
-
+/*
 var accordian = document.getElementsByClassName('panel-heading');
 
 panel-heading.addEventListener("click", /* [change to opened accordian via changing all divs with the id "collapse2" to class="panel-collapse collapse in"])
-
+*/
 //repeat for div id "collapse3" when clicking the Weapons Training "View details" link on home page
 
 //repeat for div id "collapse4" when clicking the Martial Arts "View details" link on home page (5 and 1 are already set to be open)
@@ -17,7 +49,7 @@ panel-heading.addEventListener("click", /* [change to opened accordian via chang
 
 
 // 404 page redirect - all routes that do not match produce my 404 template 'missing-page.html' instead
-
+/*
 app.error(function(err, req, res, next){
     if (err instanceof NotFound) {
         res.sendFile('ninja/missing-page.html');
@@ -25,7 +57,7 @@ app.error(function(err, req, res, next){
         next(err);
     }
 });
-
+*/
 /* webserver code written in node.js */
 /* needed to make the 404 page function properly, if the site was actually hosted online */
 

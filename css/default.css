@@ -90,7 +90,6 @@ body {
 
 .carousel-caption {
   overflow: auto; /* overflows goes into verticle scrollbar only if needed since hidden in parent */
-  background-color: rgba(250, 244, 239, 0.4);
   z-index: 3;
   max-height: 200px;
   padding: 0;
@@ -99,6 +98,14 @@ body {
     2px 1px 1px #ccc, 1px 2px 1px #eee,
     3px 2px 1px #ccc, 2px 3px 1px #eee,
     4px 3px 1px #ccc, 3px 4px 1px #eee,;
+}
+
+.carousel-caption > h1 {
+  word-spacing: 8px;
+}
+
+.carousel-caption > h2 {
+  word-spacing: 4px;
 }
 
 .carousel .item {
@@ -212,6 +219,21 @@ p {
   width: 80%;
   padding: 10px;
 }
+
+/* Testimonial styling (within about.html) */
+
+ .testimonial-header {
+  font-size: 30px;
+ }
+
+/*
+.testimonials {
+  visibility: hidden;
+}
+
+adding js to make this visible 
+*/
+
 /* end about.html CSS */
 
 
