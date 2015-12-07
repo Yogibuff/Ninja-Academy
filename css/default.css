@@ -14,6 +14,7 @@ body {
 
 /* 767px is breakpoint for navbar collapse to sandwich button */
 /* iPhone and mobile sized screens - 568px iPhone 5, 627px iPhone 6, and 6 Plus - 736px */
+/* breakpoint for nav collapse @ 691px */
 @media only screen and (max-width: 766px) {
   .carousel, .carousel-caption{ display:none; }
   #will-teach-header{ padding-top: 80px; }
@@ -28,39 +29,41 @@ body {
   .carousel, .carousel-caption{ display:none; }
   #will-teach-header{ padding-top: 80px; }
   a.navbar-brand{ font-size: 22px; }
-  .nav > li > a{ padding-right: 5px !important; padding-left: 2px !important; font-size: 17px !important; }
+  .nav > li > a{ padding-right: 5px !important; padding-left: 2px !important; font-size: 16px !important; }
+  .btn-lg{ padding-right: 0px;}
 }
 
 @media only screen and (max-width: 907px) and (min-width: 786px) {
   .carousel, .carousel-caption{ display:none; }
   #will-teach-header{ padding-top: 80px; }
-  a.navbar-brand{ font-size: 24px; }
+  a.navbar-brand{ font-size: 22px; }
   .nav > li > a{ padding-right: 5px !important; padding-left: 2px !important; font-size: 18px !important; }
+  .btn-lg{ padding-right: 0px;}
 }
 
-@media only screen and (max-width: 960px) and (min-width: 908px) {
-  a.navbar-brand{ font-size: 26px; }
+@media only screen and (max-width: 979px) and (min-width: 908px) {
+  a.navbar-brand{ font-size: 24px; }
   .nav > li > a{ font-size: 14px; }
 }
 
-@media only screen and (max-width: 1070px) and (min-width: 959px) {
+@media only screen and (max-width: 1189px) and (min-width: 980px) {
   a.navbar-brand{ font-size: 26px; }
-  .nav > li > a{ font-size: 18px; }
+  .nav > li > a{ font-size: 18px !important; padding-left: 28px !important; padding-right: 28px !important; }
 }
 
-@media only screen and (max-width: 1335px) and (min-width: 1071px) {
+@media only screen and (max-width: 1335px) and (min-width: 1190px) {
   a.navbar-brand{ font-size: 30px; }
-  .nav > li > a{ font-size: 22px !important; padding-left: 55px !important; padding-right: 55px !important;}
+  .nav > li > a{ font-size: 22px !important; padding-left: 45px !important; padding-right: 45px !important; }
 }
 
 @media only screen and (max-width: 1535px) and (min-width: 1336px) {
-  a.navbar-brand{ font-size: 45px; }
-  .nav > li > a{ padding-right: 60px !important; padding-left: 60px !important; font-size: 22px !important; }
+  a.navbar-brand{ font-size: 40px; }
+  .nav > li > a{ padding-right: 55px !important; padding-left: 55px !important; font-size: 22px !important; }
 }
 
 @media only screen and (max-width: 2069px) and (min-width: 1536px) {
   a.navbar-brand{ font-size: 45px; }
-  .nav > li > a{ padding-right: 90px !important; padding-left: 90px !important; font-size: 22px !important; }
+  .nav > li > a{ padding-right: 80px !important; padding-left: 80px !important; font-size: 22px !important; }
   #register-modal-button{ margin-left: 40px;}
 }
 
