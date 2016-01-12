@@ -1,0 +1,12 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+node_modules
+
+# DS Store
+.DS_Store
+
+#unused files folder
+unused_files
