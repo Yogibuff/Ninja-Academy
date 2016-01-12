@@ -1,3 +1,4 @@
+/* Pagewide CSS styling */
 * {
   text-align: center;
 }
@@ -8,13 +9,7 @@ body {
   min-width: 600px;
 }
 
-/* Navbar media Queries */
-/* Issue solved: added media queries so the carousel and navbar cannot be smashed
-  into an unreadable block of text at small or narrow screen sizes */
-
-/* 767px is breakpoint for navbar collapse to sandwich button */
-/* iPhone and mobile sized screens - 568px iPhone 5, 627px iPhone 6, and 6 Plus - 736px */
-/* breakpoint for nav collapse @ 691px */
+/*  Media Queries */
 @media only screen and (max-width: 766px) {
   .carousel, .carousel-caption{ display:none; }
   #will-teach-header{ padding-top: 80px; }
@@ -72,10 +67,9 @@ body {
   .nav > li > a{ padding-right: 140px !important; padding-left: 140px !important; font-size: 22px !important; }
   #register-modal-button{ margin-left: 80px;}
 }
-/* end Navbar resizing media queries */
 
 
-
+/* ///////////////////////////// Content Styling ///////////////////////////// */
 /* Carousel styling */
 .carousel {
   height: 500px;
@@ -147,8 +141,6 @@ body {
   padding-left: 60px;
 }
 
-/*  end Carousel CSS  */
-
 h1 {
   font-family: 'Audiowide', Serif;
   font-size: 40px;
@@ -204,7 +196,7 @@ p {
   text-decoration: underline;
 }
 
-/* about.html styling */
+/* About page styles */
 .featurette-divider {
   padding-top: 30px;
   padding-right: 10px;
@@ -223,34 +215,37 @@ p {
   padding: 10px;
 }
 
-/* Testimonial styling (within about.html) */
-
+/* Testimonials within About page */
  .testimonial-header {
   font-size: 30px;
  }
 
-/*
-.testimonials {
-  visibility: hidden;
-}
-
-adding js to make this visible 
-*/
-
-/* end about.html CSS */
-
-
-/* 404 error page css */
+/* 404 error page */
 #error-page {
-  background-color: #daecee;
-  width: 100%;
-  height: auto;
+  background-color: #DAECEE;;
+
 }
 
-/* end error page */
+#lovesToCode {
+  position: absolute;
+  min-height: 100%;
+  background-color: #DAECEE;
+  min-width: 100%;
+}
+#humorous-content {
+  position: fixed;
+  right: 0px;
+  bottom: 10px;
+}
 
-/* FAQ.html page CSS */
+#fixed-footer {
+  position: fixed;
+  right: 0px;
+  bottom: 10px;
+  padding-right: 100px;
+}
 
+/* FAQ.html page */
 .faq-container {
   padding-top: 120px;
   padding-bottom: 50px;
@@ -273,16 +268,13 @@ adding js to make this visible
   padding-top: 15px;
 }
 
-/* end FAQ CSS */
-
 .form-alignment-table > li {
   list-style: none  !important;
 }
 
 
 /* more modal-specific styles */
-
-textarea#message {
+.modal textarea #message {
   width: 90%;
   max-width: 95%;
   left: 5%; /* (100%-width)/2 */
@@ -293,42 +285,45 @@ textarea#message {
   text-align: left; 
 }
 
-input#required.text-center {
+.modal input #required.text-center {
   font-size: 22px;
 }
 
-form {
+.modal form {
   width: 80%;
   margin: 0 auto;
 }
 
-label, input {
+.modal label, input {
   display: inline-block;
 }
 
-label {
+.modal label {
   width: 30%;
-  /* positions the label text beside the input */
+  /* positions the label text, beside the input */
   text-align: right;
 }
 
-label + input {
+.modal label + input {
   width: 60%;
   margin: 0 5% 0 3%;
 }
 
-input + input {
+.modal input + input {
   float: right;
 }
 
-.remove-alignment {
+.modal .remove-alignment {
   text-align: center !important;
 }
-/* END modal styles */
 
+/* register modal comment box sizing */
+li > . form > .form-input-field > #message {
+  width: 100%;
+  height: 90px;
+}
 
 /* Navbar styling */
-
 .navbar-wrapper /* used for positioning */ {
   position: absolute;
   top: 0;
@@ -544,7 +539,7 @@ ul.dropdown-menu {
   border-top-width: 3px; 
 }
 
-/* button animations */
+/* navbar bounce-in button animation */
 .hvr-bounce-in {
   display: inline-block;
   vertical-align: middle;
@@ -559,7 +554,7 @@ ul.dropdown-menu {
 }
 
 
-
+/* submit button push animation */
 .hvr-push {
   display: inline-block;
   vertical-align: middle;
@@ -596,7 +591,7 @@ ul.dropdown-menu {
   }
 }
 
-
+/* Nav brand name animation */
 .hvr-bounce-to-top {
   display: inline-block;
   vertical-align: middle;
@@ -627,6 +622,7 @@ ul.dropdown-menu {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
+/* navbar dropdown menu bounce fills bar with color */
 .hvr-bounce-to-left {
   display: inline-block;
   vertical-align: middle;
@@ -663,6 +659,3 @@ ul.dropdown-menu {
   transform: scaleX(1);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
-
-
-/* END Navbar Styling */
