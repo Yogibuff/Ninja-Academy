@@ -2,6 +2,8 @@
 
 ##### Ninja Academy is responsive webpage featuring a ficticious martial arts enrolling young men aged 12-18 who want to learn the combat techniques, the teamwork, and the lifestyle of Ninjas.
 
+###### <a href="https://infinite-ocean-23539.herokuapp.com">Hosted Here on Heroku</a>
+
 ## Features
   * Bootstrap formatting and classes
   * Carousel of responsive images prepared in CS6
@@ -56,8 +58,10 @@
 
 <img src="images/screenshots/ninja-custom-404.png">
 
-## "Subscribe" Modal and "Send Us a Comment" Modal
+## "Subscribe", "Register", and "Send Us a Comment" Modal Forms
 
 <img src="images/screenshots/ninja-subscribe.png">
+
+<img src="images/screenshots/ninja-register.png">
 
 <img src="images/screenshots/ninja-comments.png">
