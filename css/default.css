@@ -324,7 +324,7 @@ li > . form > .form-input-field > #message {
 }
 
 /* Navbar styling */
-.navbar-wrapper /* used for positioning */ {
+.navbar-wrapper {
   position: absolute;
   top: 0;
   right: 0;
@@ -459,7 +459,10 @@ li > . form > .form-input-field > #message {
   text-align: right;
 }
 
-.nav-link:link, .nav-link:visited, .footer-links:link, .footer-links:visited {
+.nav-link:link, 
+.nav-link:visited, 
+.footer-links:link, 
+.footer-links:visited {
   margin-left: 15px;
   margin-right: 15px;
   letter-spacing: 2px;
@@ -545,11 +548,15 @@ ul.dropdown-menu {
   vertical-align: middle;
   transition-duration: 1s;
 }
-.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+.hvr-bounce-in:hover, 
+.hvr-bounce-in:focus, 
+.hvr-bounce-in:active {
   transform: scale(1.4);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
-.navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus, .navbar-nav>.open>a {
+.navbar-nav>.open>a:hover, 
+.navbar-nav>.open>a:focus, 
+.navbar-nav>.open>a {
   background-color: transparent !important;
 }
 
@@ -567,26 +574,11 @@ ul.dropdown-menu {
   animation-iteration-count: 1;
 }
 
-@-webkit-keyframes hvr-push {
-  50% {
-    -webkit-transform: scale(0.85);
-    transform: scale(0.85);
-  }
-
-  100% {
-    -webkit-transform: scale(95);
-    transform: scale(0.95);
-  }
-}
-
 @keyframes hvr-push {
   50% {
-    -webkit-transform: scale(0.85);
     transform: scale(0.85);
   }
-
   100% {
-    -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
 }
