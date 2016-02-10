@@ -2,6 +2,9 @@
   "name": "ninja",
   "version": "1.0.0",
   "description": "Ninja Academy",
+  "engines": {
+    "node": "4.3.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,7 +26,6 @@
   },
   "homepage": "https://github.com/Yogibuff/Ninja-Academy#readme",
   "dependencies": {
-    "express": "^4.13.4",
-    "node": "4.3.0"
+    "express": "^4.13.4"
   }
 }
