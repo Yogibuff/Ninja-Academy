@@ -4,15 +4,17 @@
   "description": "Ninja Academy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://Yogibuff@github.com/Yogibuff/Ninja-Academy.git"
   },
   "keywords": [
-    "occs",
-    "project"
+    "ninja",
+    "academy",
+    "heroku"
   ],
   "author": "jordanThimmig",
   "license": "ISC",
@@ -23,6 +25,6 @@
   "dependencies": {
     "express": "^4.13.3",
     "gulp": "^3.9.0",
-    "node": "0.0.0"
+    "node": "4.2.6"
   }
 }
